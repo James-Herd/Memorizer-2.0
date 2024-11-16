@@ -1,0 +1,115 @@
+/* CSS Reset using the Box Model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box; /* Ensures padding and border are included in element's width/height */
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Removes default padding */
+}
+
+html,
+body {
+  width: 100%; /* Ensures full width for the root element */
+  height: 100%; /* Ensures full height for the root element */
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.5; /* Optional: Improve readability */
+  text-rendering: optimizeLegibility; /* Optional: Enhance text rendering */
+  -webkit-font-smoothing: antialiased; /* Optional: Smooth font on WebKit browsers */
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block; /* Ensures consistent display for multimedia elements */
+  max-width: 100%; /* Makes media elements responsive */
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit; /* Inherits font styling from the body */
+}
+
+a {
+  text-decoration: none; /* Removes underline for links */
+  color: inherit; /* Inherits color from parent */
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+/* ------------------------------------------------------------------------------ */
+
+header {
+  padding: 0 30%;
+  width: 100%;
+  height: 10%;
+  background-color: #171717;
+}
+
+header h1 {
+  display: flex;
+  align-items: center; /* Aligns items along the cross axis (perpendicular to the main axis). */
+  justify-content: space-between; /* Aligns items along the main axis (horizontally in a row or vertically in a column). */
+
+  height: 100%;
+  width: 100%;
+}
+
+header h1 .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #2f2f2f;
+  border-radius: 15px;
+  box-shadow: 0px 0px 15px 2px #ffffffb2;
+  color: #ffffffb2;
+  height: 64%;
+  width: 8%;
+}
+
+/* ------------------------------------------------------------------------------ */
+
+main {
+  display: flex;
+
+  background-color: darkgray;
+  height: 85%;
+  width: 100%;
+}
+
+#section-left {
+  background-color: #2f2f2f;
+  width: 15%;
+}
+
+#section-middle {
+  background-color: #212121;
+  width: 70%;
+}
+
+#section-right {
+  background-color: #2f2f2f;
+  width: 15%;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+
+  background-color: #171717;
+  color: #ffffffb2;
+  height: 5%;
+  padding-right: 2%;
+  width: 100%;
+}
