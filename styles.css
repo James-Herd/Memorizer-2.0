@@ -52,7 +52,7 @@ header {
   padding: 0 30%;
   width: 100%;
   height: 10%;
-  background-color: #171717;
+  background-color: #adbc9f;
 }
 
 header h1 {
@@ -69,36 +69,88 @@ header h1 .card {
   align-items: center;
   justify-content: center;
 
-  background-color: #2f2f2f;
+  background-color: #436850;
   border-radius: 15px;
-  box-shadow: 0px 0px 15px 2px #ffffffb2;
-  color: #ffffffb2;
+  box-shadow: 0px 0px 15px 2px #fbfada;
+  color: #fbfadab2;
   height: 64%;
   width: 8%;
 }
 
+.card-0 {
+  animation: fadeOut0 1.5s infinite;
+}
+.card-1 {
+  animation: fadeOut0 1.2s infinite;
+}
+.card-2 {
+  animation: fadeOut1 1.8s infinite;
+}
+.card-3 {
+  animation: fadeOut0 2.1s infinite;
+}
+.card-4 {
+  animation: fadeOut1 1.2s infinite;
+}
+.card-5 {
+  animation: fadeOut0 1.8s infinite;
+}
+.card-6 {
+  animation: fadeOut1 2.1s infinite;
+}
+.card-7 {
+  animation: fadeOut0 0.9s infinite;
+}
+.card-8 {
+  animation: fadeOut1 1.5s infinite;
+}
+
+@keyframes fadeOut0 {
+  0% {
+    color: #fbfada;
+  }
+  50% {
+    color: #fbfada00;
+  }
+  100% {
+    color: #fbfada00;
+  }
+}
+@keyframes fadeOut1 {
+  0% {
+    color: #fbfada00;
+  }
+  49% {
+    color: #fbfada00;
+  }
+  50% {
+    color: #fbfada;
+  }
+  100% {
+    color: #fbfada00;
+  }
+}
 /* ------------------------------------------------------------------------------ */
 
 main {
   display: flex;
 
-  background-color: darkgray;
   height: 85%;
   width: 100%;
 }
 
 #section-left {
-  background-color: #2f2f2f;
+  background-color: #436850;
   width: 15%;
 }
 
 #section-middle {
-  background-color: #212121;
+  background-color: #12372a;
   width: 70%;
 }
 
 #section-right {
-  background-color: #2f2f2f;
+  background-color: #436850;
   width: 15%;
 }
 
@@ -107,9 +159,31 @@ footer {
   align-items: center;
   justify-content: right;
 
-  background-color: #171717;
+  background-color: #adbc9f;
   color: #ffffffb2;
   height: 5%;
+
   padding-right: 2%;
   width: 100%;
+}
+
+@keyframes wobble {
+  0% {
+    transform: rotate(0deg);
+  }
+  15% {
+    transform: rotate(50deg);
+  }
+  30% {
+    transform: rotate(-5deg);
+  }
+  45% {
+    transform: rotate(3deg);
+  }
+  60% {
+    transform: rotate(-30deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
